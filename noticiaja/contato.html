@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Notícia Já</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo" id="topo">
+    <h1><a href="index.html">Notícia Já</a></h1>
+    <p class="slogan">Informação rápida para quem tem pressa</p>
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="noticia.html">Notícia</a></li>
+      <li><a href="placar.html">Placar</a></li>
+      <li><a href="contato.html" class="ativo">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Fale com a redação</h2>
+    <p>Viu algo que merece virar notícia? Preencha o formulário e conte para a gente.</p>
+    <section class="expediente">
+      <h3>Expediente</h3>
+      <dl>
+        <dt>Editora-chefe</dt>
+        <dd>Marina Costa</dd>
+        <dt>Repórteres</dt>
+        <dd>Paulo Andrade</dd>
+        <dd>Lívia Prado</dd>
+        <dt>Fotografia</dt>
+        <dd>Caio Mendes</dd>
+      </dl>
+    </section>
+    <form action="obrigado.html" method="get">
+      <fieldset>
+        <legend>Seus dados</legend>
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex.: Ana Souza" required>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo">
+          <label for="telefone">Telefone (opcional)</label>
+          <input type="tel" id="telefone" name="telefone">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sua pauta</legend>
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="">Escolha uma opção</option>
+            <option value="sugestao">Sugestão de pauta</option>
+            <option value="correcao">Pedido de correção</option>
+            <option value="publicidade">Publicidade</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="data">Quando aconteceu?</label>
+          <input type="date" id="data" name="data">
+        </div>
+        <div class="campo">
+          <label for="link">Link relacionado (opcional)</label>
+          <input type="url" id="link" name="link" placeholder="https://">
+        </div>
+        <div class="campo">
+          <label for="mensagem">Conte o que aconteceu</label>
+          <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Como prefere receber a resposta?</legend>
+        <label><input type="radio" name="resposta" value="email" checked> Por e-mail</label>
+        <label><input type="radio" name="resposta" value="telefone"> Por telefone</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quero receber</legend>
+        <label><input type="checkbox" name="interesse" value="newsletter"> Newsletter diária</label>
+        <label><input type="checkbox" name="interesse" value="urgente"> Alertas de última hora</label>
+        <label><input type="checkbox" name="interesse" value="semana"> Resumo da semana</label>
+      </fieldset>
+
+      <label class="aceite"><input type="checkbox" name="aceite" value="sim" required> Li e aceito a política de privacidade</label>
+
+      <p>
+        <button type="submit">Enviar pauta</button>
+        <button type="reset">Limpar</button>
+      </p>
+    </form>
+  </main>
+  <footer class="rodape">
+    <p>© 2026 Notícia Já · Projeto de aula · <a href="https://www.univap.br" target="_blank" rel="noopener noreferrer">Univap</a></p>
+    <p>Fale com a redação: <a href="mailto:redacao@noticiaja.example">redacao@noticiaja.example</a> · <a href="tel:+551200000000">(12) 0000-0000</a></p>
+  </footer>
+</body>
+</html>

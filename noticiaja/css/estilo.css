@@ -1,0 +1,23 @@
+:root { --vermelho: #c8283b; --escuro: #1f2933; --claro: #f6f7f9; }
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, sans-serif; margin: 0; color: var(--escuro); background: var(--claro); line-height: 1.6; }
+header { background: var(--escuro); color: #fff; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+header h1 { margin: 0; font-size: 1.6rem; }
+header h1 span { color: var(--vermelho); }
+nav a { color: #fff; margin-left: 16px; text-decoration: none; font-weight: 600; }
+nav a:hover { color: #ff8a95; }
+main { max-width: 760px; margin: 24px auto; padding: 0 16px; }
+footer { text-align: center; color: #667; padding: 24px; font-size: .9rem; }
+#saudacao { background: #fff; border-left: 5px solid var(--vermelho); padding: 12px 16px; border-radius: 6px; font-weight: 600; min-height: 1.6em; }
+article { background: #fff; border-radius: 10px; padding: 20px 24px; margin-top: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+article h2 { margin-top: 0; }
+button { font: inherit; font-weight: 600; padding: 8px 16px; border: 0; border-radius: 6px; background: var(--escuro); color: #fff; cursor: pointer; margin-right: 8px; }
+button:hover { background: #3a4755; }
+button.curtido { background: var(--vermelho); }
+form { background: #fff; border-radius: 10px; padding: 20px 24px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+label { display: block; font-weight: 600; margin-top: 12px; }
+input, textarea { width: 100%; font: inherit; padding: 8px 10px; border: 2px solid #cbd2d9; border-radius: 6px; margin-top: 4px; }
+input:focus, textarea:focus { outline: none; border-color: var(--vermelho); }
+form button { margin-top: 16px; background: var(--vermelho); }
+.erro { color: var(--vermelho); font-size: .9rem; font-weight: 600; display: block; min-height: 1.2em; }
+#sucesso { color: #0b6b3a; font-weight: 700; margin-top: 12px; }

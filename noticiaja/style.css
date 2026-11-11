@@ -1,0 +1,80 @@
+/* Notícia Já — estilos prontos. Hoje a aula é de HTML: este arquivo só deixa a página bonita. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65; color: #1c2430; background: #f6f2e9; }
+a { color: #c8283b; }
+a:hover { color: #8f1523; }
+
+.topo { background: #0e1a2b; color: #fff; text-align: center; padding: 22px 16px 14px; }
+.topo h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 2.7rem; letter-spacing: -1px; }
+.topo h1 a { color: #fff; text-decoration: none; }
+.slogan { margin: 2px 0 0; color: #f2b134; font-style: italic; }
+
+.menu { background: #c8283b; text-align: center; }
+.menu a { display: inline-block; padding: 12px 20px; color: #fff; text-decoration: none; font-weight: 600; }
+.menu a:hover, .menu a.ativo { background: #8f1523; color: #fff; }
+.menu ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+
+main { max-width: 980px; margin: 26px auto; padding: 0 18px; }
+h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; line-height: 1.2; margin: 0 0 12px; padding-left: 12px; border-left: 6px solid #c8283b; }
+h3 { font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; margin: 22px 0 6px; }
+figure { margin: 0 0 14px; }
+img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.meta { color: #5b6574; font-size: .92rem; margin: 0 0 12px; }
+
+.home { display: grid; grid-template-columns: 2fr 1fr; gap: 26px; }
+.destaque { grid-column: 1 / -1; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(14, 26, 43, .08); }
+.ultimas, .mais-lidas { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(14, 26, 43, .08); }
+.ultimas ul, .mais-lidas ol { margin: 0; padding-left: 22px; }
+.ultimas li, .mais-lidas li { margin-bottom: 8px; }
+.leia-mais { display: inline-block; background: #c8283b; color: #fff; text-decoration: none; font-weight: 700; padding: 9px 18px; border-radius: 22px; }
+.leia-mais:hover { background: #8f1523; color: #fff; }
+
+.materia { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(14, 26, 43, .08); }
+.indice { background: #eef2f7; border-left: 5px solid #0f7c8a; border-radius: 8px; padding: 10px 16px; margin: 14px 0; }
+.indice a { display: inline-block; margin-right: 14px; font-weight: 600; color: #0f7c8a; }
+.voltar { text-align: right; font-size: .9rem; margin: 4px 0 0; }
+.baixar { margin-top: 20px; }
+.baixar a { display: inline-block; border: 2px solid #0f7c8a; color: #0f7c8a; text-decoration: none; font-weight: 700; padding: 8px 16px; border-radius: 8px; }
+.cronograma, .materia ul { background: #f6f2e9; border-radius: 8px; padding: 12px 12px 12px 36px; }
+.cronograma li, .materia li { margin-bottom: 4px; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; margin: 8px 0 28px; box-shadow: 0 2px 10px rgba(14, 26, 43, .08); }
+caption { caption-side: top; text-align: left; font-family: Georgia, serif; font-weight: 700; font-size: 1.1rem; padding: 6px 2px 10px; }
+th, td { padding: 9px 12px; border-bottom: 1px solid #e6dfd0; text-align: center; }
+thead th { background: #0e1a2b; color: #fff; }
+tbody th { background: #eef2f7; text-align: left; }
+tbody tr:nth-child(even) td { background: #faf7f0; }
+/* tabela larga rola só dentro da caixa, sem estourar a página no celular */
+.rolagem { overflow-x: auto; }
+.rolagem table { min-width: 480px; }
+tfoot td { background: #eef2f7; font-size: .88rem; color: #3b4656; text-align: left; }
+
+.expediente { background: #fff; border-radius: 12px; padding: 18px 22px; box-shadow: 0 2px 10px rgba(14, 26, 43, .08); margin-bottom: 26px; }
+.expediente h3 { margin-top: 0; }
+dt { font-weight: 700; color: #c8283b; margin-top: 8px; }
+dd { margin: 0 0 4px 0; }
+
+form { background: #fff; border-radius: 12px; padding: 22px; box-shadow: 0 2px 10px rgba(14, 26, 43, .08); }
+fieldset { border: 1px solid #d9d1bf; border-radius: 10px; margin: 0 0 18px; padding: 8px 18px 14px; }
+legend { font-family: Georgia, serif; font-weight: 700; padding: 0 8px; color: #0e1a2b; }
+.campo { margin-bottom: 12px; }
+label { display: block; font-weight: 600; margin-bottom: 4px; }
+fieldset > label { display: inline-block; font-weight: 400; margin-right: 22px; }
+.aceite { font-weight: 400; margin: 6px 0 16px; }
+input[type=text], input[type=email], input[type=tel], input[type=url], input[type=date], select, textarea { width: 100%; padding: 9px 11px; font: inherit; border: 1px solid #b9b19e; border-radius: 8px; background: #fffdf8; }
+input:focus, select:focus, textarea:focus { outline: 3px solid #f2b134; border-color: #c8283b; }
+button { font: inherit; font-weight: 700; padding: 10px 22px; border: 0; border-radius: 22px; background: #c8283b; color: #fff; cursor: pointer; }
+button[type=reset] { background: #5b6574; }
+button:hover { filter: brightness(.9); }
+#dados { background: #f6f2e9; border-radius: 8px; padding: 12px 12px 12px 36px; }
+
+.rodape { background: #0e1a2b; color: #cfd6e2; text-align: center; padding: 18px 16px; font-size: .92rem; margin-top: 30px; }
+.rodape p { margin: 4px 0; }
+.rodape a { color: #f2b134; }
+
+@media (max-width: 700px) {
+  .home { grid-template-columns: 1fr; }
+  .topo h1 { font-size: 2.1rem; }
+  table { font-size: .85rem; }
+  th, td { padding: 7px 6px; }
+}

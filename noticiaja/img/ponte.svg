@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Ponte sobre o rio ao entardecer">
+<defs>
+<linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27456b"/><stop offset=".55" stop-color="#e98a5b"/><stop offset="1" stop-color="#f7c873"/></linearGradient>
+<linearGradient id="rio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a5a7a"/><stop offset="1" stop-color="#143349"/></linearGradient>
+</defs>
+<rect width="800" height="450" fill="url(#ceu)"/>
+<circle cx="610" cy="230" r="58" fill="#fff3c4" opacity=".95"/>
+<circle cx="610" cy="230" r="82" fill="#fff3c4" opacity=".18"/>
+<path d="M0 270 Q120 215 240 262 T480 250 T800 255 V300 H0Z" fill="#2c3f55" opacity=".85"/>
+<path d="M0 290 Q160 250 300 285 T560 280 T800 288 V310 H0Z" fill="#1d2d40"/>
+<rect y="300" width="800" height="150" fill="url(#rio)"/>
+<g opacity=".35" stroke="#fff3c4" stroke-width="3" stroke-linecap="round"><path d="M560 330h100M575 345h70M590 360h45"/></g>
+<g fill="#0e1a2b">
+<rect x="0" y="262" width="800" height="22"/>
+<rect x="120" y="284" width="26" height="86"/><rect x="330" y="284" width="26" height="86"/><rect x="540" y="284" width="26" height="86"/><rect x="740" y="284" width="26" height="86"/>
+<rect x="228" y="150" width="14" height="112"/><rect x="560" y="150" width="14" height="112"/>
+</g>
+<g stroke="#0e1a2b" stroke-width="3" fill="none">
+<path d="M0 262 Q120 190 235 150 Q400 215 567 150 Q690 190 800 262"/>
+<path d="M60 262V238M120 262V214M180 262V176M290 262V198M350 262V222M410 262V234M470 262V222M520 262V190M620 262V190M680 262V214M740 262V238"/>
+</g>
+<g fill="#f2b134"><rect x="300" y="250" width="14" height="8" rx="2"/><rect x="470" y="250" width="14" height="8" rx="2"/></g>
+</svg>
